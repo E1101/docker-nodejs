@@ -27,6 +27,5 @@ RUN mkdir /node && tar -xvf nodejs.tar.xz --strip-components=1 -C /node \
 WORKDIR /data
 VOLUME /data
 
-CMD ["-v"]
-ENTRYPOINT ["node"]
+CMD ["node", "-v"]
 
